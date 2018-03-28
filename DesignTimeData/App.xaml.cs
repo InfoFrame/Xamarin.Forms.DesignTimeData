@@ -7,13 +7,14 @@ namespace DesignTimeData
         public App()
         {
             InitializeComponent();
-
-            MainPage = new DesignTimeDataPage();
         }
 
         protected override void OnStart()
         {
             // Handle when your app starts
+            DesignTimeHelper.SwitchOffDesignMode();
+
+            MainPage = new DesignTimeDataPage();
         }
 
         protected override void OnSleep()
