@@ -3,7 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:local="clr-namespace:DesignTimeData" 
-    x:Class="DesignTimeData.DesignTimeDataPage"
+    x:Class="DesignTimeData.Views.DesignTimeDataPage"
     BindingContext="{x:Static local:ViewModelLocator.MainViewModel}">
     <StackLayout>
         <Label Text="{Binding WelcomeText}" VerticalOptions="Center" HorizontalOptions="Center" /> 

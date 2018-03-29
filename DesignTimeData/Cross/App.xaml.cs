@@ -14,7 +14,7 @@ namespace DesignTimeData
             // Handle when your app starts
             //DesignTimeHelper.SwitchOffDesignMode();
 
-            MainPage = new DesignTimeDataPage();
+            MainPage = new Views.DesignTimeDataPage();
         }
 
         protected override void OnSleep()

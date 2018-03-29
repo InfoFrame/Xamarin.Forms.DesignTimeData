@@ -96,12 +96,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DesignTimeData.csproj">
-      <Project>{81786A00-4D21-487E-B918-6D96D84428DB}</Project>
-      <Name>DesignTimeData</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
   </ItemGroup>
@@ -123,6 +117,12 @@
   <ItemGroup>
     <BundleResource Include="Resources\boy.png" />
     <BundleResource Include="Resources\girl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cross\DesignTimeData.csproj">
+      <Project>{81786A00-4D21-487E-B918-6D96D84428DB}</Project>
+      <Name>DesignTimeData</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets')" />
