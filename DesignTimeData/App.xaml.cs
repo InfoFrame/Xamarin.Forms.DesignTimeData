@@ -12,7 +12,7 @@ namespace DesignTimeData
         protected override void OnStart()
         {
             // Handle when your app starts
-            DesignTimeHelper.SwitchOffDesignMode();
+            //DesignTimeHelper.SwitchOffDesignMode();
 
             MainPage = new DesignTimeDataPage();
         }

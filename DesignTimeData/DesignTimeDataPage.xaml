@@ -5,5 +5,29 @@
     xmlns:local="clr-namespace:DesignTimeData" 
     x:Class="DesignTimeData.DesignTimeDataPage"
     BindingContext="{x:Static local:ViewModelLocator.MainViewModel}">
-    <Label Text="{Binding WelcomeText}" VerticalOptions="Center" HorizontalOptions="Center" />    
+    <StackLayout>
+        <Label Text="{Binding WelcomeText}" VerticalOptions="Center" HorizontalOptions="Center" /> 
+        <ListView ItemsSource="{Binding Items}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <!--<ImageCell ImageSource="{Binding Image}" Text="{Binding Name}" Detail="{Binding Description}" />-->
+                  <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Image Grid.RowSpan="2" Source="{Binding Image}" Grid.Column="0" WidthRequest="40" HeightRequest="40"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name}" FontSize="Default" VerticalTextAlignment="Center"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Description}" FontSize="Micro" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>
