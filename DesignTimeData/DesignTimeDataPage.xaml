@@ -18,12 +18,12 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
-                            <Image Grid.RowSpan="2" Source="{Binding Image}" Grid.Column="0" WidthRequest="40" HeightRequest="40"/>
+                            <Image Grid.RowSpan="2" Source="{Binding Image}" Grid.Column="0" WidthRequest="40" HeightRequest="40" VerticalOptions="Center"/>
                             <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name}" FontSize="Default" VerticalTextAlignment="Center"/>
-                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Description}" FontSize="Micro" VerticalTextAlignment="Center"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Description}" FontSize="Micro" VerticalTextAlignment="Start"/>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
